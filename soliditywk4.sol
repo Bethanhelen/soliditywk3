@@ -32,7 +32,7 @@ contract walletApp {
     _;
   }
 
-  modifier onlyUser(uint amount){
+  modifier onlyUser(uint: amount){
     require(amount<= balances[msg.sender], "Insufficient fund");
     _;
   }
